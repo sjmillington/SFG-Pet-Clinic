@@ -2,10 +2,11 @@ package com.sjmillington.SFGPetClinic.services.map;
 
 import com.sjmillington.SFGPetClinic.model.Vet;
 import com.sjmillington.SFGPetClinic.services.CrudService;
+import com.sjmillington.SFGPetClinic.services.VetService;
 
 import java.util.Set;
 
-public class VetMapService extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Vet findById(Long id) {
